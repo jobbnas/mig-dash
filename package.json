@@ -1,0 +1,23 @@
+{
+  "name": "vm-migration-dashboard",
+  "version": "1.0.0",
+  "description": "Production-ready dashboard for OpenShift VM live migration demonstrations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "health": "curl -f http://localhost:${PORT:-3000}/health || exit 1"
+  },
+  "keywords": ["openshift", "kubevirt", "vm-migration", "dashboard", "kubernetes"],
+  "author": "OpenShift Demo",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
